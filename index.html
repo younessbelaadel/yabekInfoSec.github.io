@@ -14,273 +14,544 @@
 </head>
 <body>
 	<div class="content">
-		      <a href="https://cs253.stanford.edu" class="logo">
-		        <img src="stanford.svg" alt="Stanford">
-		        <h1>CS 253 Web Security</h1>
-		      </a>
+	
+      <a href="https://cs253.stanford.edu" class="logo">
+        <img src="stanford.svg" alt="Stanford">
+        <h1>CS 253 Web Security</h1>
+      </a>
 
-		      <h2>Fall 2019</h2>
-		<p>This course is a comprehensive overview of web security. The goal is to build an understanding of the most common web attacks and their countermeasures. Given the pervasive insecurity of the modern web landscape, there is a pressing need for programmers and system designers to improve their understanding of web security issues.</p>
-		<p>We'll be covering the fundamentals as well as the state-of-the-art in web security.</p>
-		<p>Topics include: Principles of web security, attacks and countermeasures, the browser security model, web app vulnerabilities, injection, denial-of-service, TLS attacks, privacy, fingerprinting, same-origin policy, cross site scripting, authentication, JavaScript security, emerging threats, defense-in-depth, and techniques for writing secure code. Course projects include writing security exploits, defending insecure web apps, and implementing emerging web standards.</p>
-		<h2>Meeting time and place</h2>
-		<p>Tuesdays and Thursdays, 1:30 PM - 2:50 PM in classroom <a href="https://campus-map.stanford.edu/?srch=380-380Y" target="_blank" rel="nofollow noopener noreferrer">380-380Y</a></p>
-		<h2>Course Staff</h2>
-		<h3>Instructor</h3>
-		<p>Feross Aboukhadijeh (<a href="mailto:feross@cs.stanford.edu">feross@cs.stanford.edu</a>)</p>
-		<h3>Teaching Assistant</h3>
-		<p>Esther Goldstein (<a href="mailto:egolds@stanford.edu">egolds@stanford.edu</a>)</p>
-		<h3>Office Hours</h3>
-		<ul>
-		<li>Feross: Thursday 3-5pm, Gates 323</li>
-		<li>Esther: Monday 3-5pm, Wednesday 3-5pm, Huang Basement</li>
-		</ul>
-		<h2>Course Policies</h2>
-		<h3>Communication</h3>
-		<p>We will primarily use <a href="https://piazza.com/stanford/fall2019/cs253" target="_blank" rel="nofollow noopener noreferrer">Piazza</a> for sending out course announcements and answering questions. Please make sure to <a href="https://piazza.com/stanford/fall2019/cs253" target="_blank" rel="nofollow noopener noreferrer">sign up</a>.</p>
-		<p>We use <a href="https://gradescope.com" target="_blank" rel="nofollow noopener noreferrer">Gradescope</a> for assignment submissions. Enroll with the code <code>97BGZB</code>.</p>
-		<p>To submit anonymous feedback to us at any point during the quarter, you may use <a href="https://forms.gle/WqKuxA2m7oycRuTt7" target="_blank" rel="nofollow noopener noreferrer">this form</a>.</p>
-		<h3>Prerequisites</h3>
-		<p>CS 142, or an equivalent amount of web development experience, is a prerequisite. You should also be curious about web security and excited to learn clever attacks, defenses, and techniques for writing secure code.</p>
-		<p>An introductory security course, such as CS 155, is not a formal prerequisite. The material in this course is focused specifically on the web, while CS 155 covers security more broadly.</p>
-		<h3>Attendence</h3>
-		<p>Attendance at lectures is mandatory. Do not enroll in this course if you are taking another course that meets at the same time.</p>
-		<h3>Grading</h3>
-		<ul>
-		<li>Assignments (75%)</li>
-		<li>Final Exam (25%)</li>
-		</ul>
-		<p>Each assignment is worth 15%. There is no midterm.</p>
-		<h3>Final Exam</h3>
-		<ul>
-		<li>Tuesday, December 10, 3:30pm - 6:30pm in <a href="https://campus-map.stanford.edu/?srch=200-305" target="_blank" rel="nofollow noopener noreferrer">200-305</a></li>
-		</ul>
-		<h3>Previous Final Exams</h3>
-		<ul>
-		<li><a href="cs253-final-2019.pdf">Final Exam 2019</a> (<a href="cs253-final-2019-solutions.pdf">Solutions</a>)</li>
-		<li><a href="cs253-sample-final.pdf">More Sample Final Exam Questions</a> (<a href="cs253-sample-final-solutions.pdf">Solutions</a>)</li>
-		</ul>
-		<h3>Collaboration Policy</h3>
-		<p>You may discuss the assignments with other students and you may work together to come up with solutions to the problems. If you do so, you must list the name of your collaborators in the submission. Each student must write up their solutions independently.</p>
-		<h3>Late Submissions</h3>
-		<p>You get three “late days” in total during the quarter. You may use a late day to submit an assignment after the deadline. You can use at most three late days for any single assignment, and you may only use late days in one-day increments (no partial late days).</p>
-		<p>If you submit an assignment more than 72 hours after the deadline, or if you submit an assignment late after running out of late days, you will receive <strong>no credit</strong> for the submission. Please submit your assignments on time and save your late days for extraordinary situations.</p>
-		<p>If you have questions about these policies, please ask us.</p>
-		<h2>Schedule</h2>
-		<h3>Sep 24: What is Web Security? HTML &amp; JavaScript Review</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2001.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=5JJrJGZ_LjM" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part1" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 1)</a></li>
-		<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part2" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 2)</a></li>
-		<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part3" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 3)</a></li>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank" rel="nofollow noopener noreferrer">A Re-Introduction to JavaScript</a></li>
-		</ul></li>
-		</ul>
-		<h3>Sep 26: HTTP, Cookies, Sessions</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2002.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=zhnQFQ2qFtA" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" target="_blank" rel="nofollow noopener noreferrer">An overview of HTTP</a></li>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank" rel="nofollow noopener noreferrer">HTTP Cookies</a></li>
-		<li>Skim: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" target="_blank" rel="nofollow noopener noreferrer">HTTP headers</a></li>
-		</ul></li>
-		</ul>
-		<h3>Oct 01: Session Attacks</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2003.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=QuhgjXKzfI8" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://web.dev/samesite-cookies-explained/" target="_blank" rel="nofollow noopener noreferrer">SameSite Cookies Explained</a></li>
-		<li><a href="https://tools.ietf.org/html/draft-west-cookie-incrementalism-00#section-4.1" target="_blank" rel="nofollow noopener noreferrer">Incrementally Better Cookies</a></li>
-		<li><a href="https://scotthelme.co.uk/csrf-is-dead/" target="_blank" rel="nofollow noopener noreferrer">CSRF Is Dead</a></li>
-		</ul></li>
-		</ul>
-		<h3>Oct 03: Cross-Site Request Forgery, Same Origin Policy</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2004.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=0-q69vAYSwo" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" target="_blank" rel="nofollow noopener noreferrer">Same Origin policy</a></li>
-		<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Cross-Site Request Forgery Prevention</a></li>
-		</ul></li>
-		</ul>
-		<h3>Oct 08: Exceptions to the Same Origin Policy, Cross-Site Script Inclusion</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2005.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=ud9cVQDte3A" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		</ul>
-		<h3>Oct 10: Cross-Site Scripting (XSS)</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2006.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=XTcqlOFhpPI" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Cross Site Scripting Prevention Cheat Sheet</a></li>
-		<li><a href="https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet" target="_blank" rel="nofollow noopener noreferrer">XSS Filter Evasion Cheat Sheet</a></li>
-		</ul></li>
-		</ul>
-		<h3>Oct 15: Cross-Site Scripting Defenses</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2007.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=PlXzrtheQGc" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="http://research.sidstamm.com/papers/csp-www2010.pdf" target="_blank" rel="nofollow noopener noreferrer">Reining in the Web with Content Security Policy</a></li>
-		<li><a href="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45542.pdf" target="_blank" rel="nofollow noopener noreferrer">CSP is Dead: Long Live CSP</a></li>
-		<li><a href="https://developers.google.com/web/updates/2019/02/trusted-types" target="_blank" rel="nofollow noopener noreferrer">Trusted Types</a></li>
-		<li><a href="https://fastmail.blog/2015/12/20/sanitising-html-the-dom-clobbering-issue/" target="_blank" rel="nofollow noopener noreferrer">Sanitising HTML: the DOM clobbering issue</a></li>
-		</ul></li>
-		</ul>
-		<h3>Oct 17: Fingerprinting and Privacy on the Web</h3>
-		<ul>
-		<li><strong>Guest Lecture by Pete Snyder (<a href="https://brave.com" target="_blank" rel="nofollow noopener noreferrer">Brave Software</a>)</strong></li>
-		<li><a href="lectures/Lecture%2008.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=OVh0oHbmla0" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://chromium.woolyss.com/f/OpenWPM-1-million-site-tracking-measurement.pdf" target="_blank" rel="nofollow noopener noreferrer">Online tracking: A 1-million-site measurement and analysis</a></li>
-		<li><a href="https://arxiv.org/pdf/1708.08510" target="_blank" rel="nofollow noopener noreferrer">Most websites don't need to vibrate: A cost-benefit approach to improving browser security</a></li>
-		<li><a href="https://blog.torproject.org/browser-fingerprinting-introduction-and-challenges-ahead" target="_blank" rel="nofollow noopener noreferrer">Browser Fingerprinting: An Introduction and the Challenges Ahead</a></li>
-		<li><a href="https://webkit.org/blog/8943/privacy-preserving-ad-click-attribution-for-the-web/" target="_blank" rel="nofollow noopener noreferrer">WebKit Ad Click Attribution</a></li>
-		<li><a href="https://crypto.stanford.edu/safecache/sameorigin.pdf" target="_blank" rel="nofollow noopener noreferrer">Protecting Browser State from Web Privacy Attacks</a></li>
-		<li>Skim: <a href="https://webkit.org/tracking-prevention-policy/" target="_blank" rel="nofollow noopener noreferrer">WebKit Tracking Prevention Policy</a></li>
-		</ul></li>
-		</ul>
-		<h3>Oct 22: Denial-of-service, Phishing, Side Channels</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2009.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=RfC_PzVmk4w" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://www.usenix.org/system/files/conference/usenixsecurity13/sec13-paper_akhawe.pdf" target="_blank" rel="nofollow noopener noreferrer">Alice in Warningland: A Large-Scale Field Study of Browser Security</a></li>
-		<li><a href="http://www.sectheory.com/clickjacking.htm" target="_blank" rel="nofollow noopener noreferrer">Clickjacking</a></li>
-		<li><a href="https://www.adambarth.com/papers/2009/barth-weinberger-song.pdf" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin JavaScript Capability Leaks: Detection, Exploitation, and Defense</a></li>
-		</ul></li>
-		</ul>
-		<h3>Oct 24: Code Injection</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2010.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=mR7yvqWmE0M" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li>None</li>
-		</ul></li>
-		</ul>
-		<h3>Oct 29: Transport Layer Security</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2011.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=S8-rnPHjyxs" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://blog.cryptographyengineering.com/2019/09/24/looking-back-at-the-snowden-revelations/" target="_blank" rel="nofollow noopener noreferrer">Looking back at the Snowden revelations</a></li>
-		<li><a href="https://transparencyreport.google.com/https/overview" target="_blank" rel="nofollow noopener noreferrer">HTTPS encryption on the web</a></li>
-		</ul></li>
-		</ul>
-		<h3>Oct 31: HTTPS in the Real World: A Spooky Tale</h3>
-		<ul>
-		<li><strong>Guest Lecture by Emily Stark &amp; Chris Palmer (<a href="https://www.google.com/chrome/" target="_blank" rel="nofollow noopener noreferrer">Google Chrome</a>)</strong></li>
-		<li><a href="lectures/Lecture%2012.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=jN26N8QS5Os" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://en.wikipedia.org/wiki/DigiNotar" target="_blank" rel="nofollow noopener noreferrer">DigiNotar on Wikipedia</a></li>
-		<li><a href="https://noncombatant.org/2015/05/01/about-http-public-key-pinning/" target="_blank" rel="nofollow noopener noreferrer">About Public Key Pinning</a></li>
-		<li><a href="https://noncombatant.org/2015/11/24/what-is-hpkp-for/" target="_blank" rel="nofollow noopener noreferrer">What Is HPKP For?</a></li>
-		<li><a href="https://developers.google.com/web/updates/2015/09/HPKP-reporting-with-chrome-46" target="_blank" rel="nofollow noopener noreferrer">Rolling out Public Key Pinning with HPKP Reporting</a></li>
-		</ul></li>
-		</ul>
-		<h3>Nov 05: Authentication</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2013.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=lgmGSYwJc20" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Authentication Cheat Sheet</a></li>
-		</ul></li>
-		</ul>
-		<h3>Nov 07: WebAuthn - The future of user authentication on the web 🤞</h3>
-		<ul>
-		<li><strong>Guest Lecture by Lucas Garron (<a href="https://github.com" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>)</strong></li>
-		<li><a href="lectures/Lecture%2014.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=_nPk2HgNpjE" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://webauthn.guide/" target="_blank" rel="nofollow noopener noreferrer">Guide to Web Authentication</a></li>
-		</ul></li>
-		</ul>
-		<h3>Nov 12: No class</h3>
-		<h3>Nov 14: Managing security concerns in a large Open Source project</h3>
-		<ul>
-		<li><strong>Guest Lecture by Myles Borins (<a href="https://nodejs.org/en/" target="_blank" rel="nofollow noopener noreferrer">Node.js</a> technical steering committee, <a href="https://www.google.com/" target="_blank" rel="nofollow noopener noreferrer">Google</a>)</strong></li>
-		<li><a href="https://kni.sh/oss-security" target="_blank" rel="nofollow noopener noreferrer">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=lX6KLL0sVTU" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://gruss.cc/files/fantastictimers.pdf" target="_blank" rel="nofollow noopener noreferrer">Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript</a></li>
-		<li><a href="https://nodesecroadmap.fyi" target="_blank" rel="nofollow noopener noreferrer">A Roadmap for Node.js Security</a></li>
-		</ul></li>
-		</ul>
-		<h3>Nov 19: Server security, Safe coding practices</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2017.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=Ox15IMOvWfA" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://snyk.io/blog/exploiting-buffer/" target="_blank" rel="nofollow noopener noreferrer">Exploiting Buffer</a></li>
-		</ul></li>
-		</ul>
-		<h3>Nov 21: Local HTTP server security</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2018.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=wLgcb4jZwGM" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li>None</li>
-		</ul></li>
-		</ul>
-		<h3>Dec 03: DNS rebinding attacks</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2019.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=bZW_55LIz0w" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://www.wired.com/story/chromecast-roku-sonos-dns-rebinding-vulnerability/" target="_blank" rel="nofollow noopener noreferrer">Millions of Streaming Devices Are Vulnerable to a Retro Web Attack</a></li>
-		<li><a href="https://crypto.stanford.edu/dns/dns-rebinding.pdf" target="_blank" rel="nofollow noopener noreferrer">Protecting Browsers from DNS Rebinding Attacks</a></li>
-		</ul></li>
-		</ul>
-		<h3>Dec 05: Browser architecture, Writing secure code</h3>
-		<ul>
-		<li><a href="lectures/Lecture%2020.pdf">Slides</a></li>
-		<li><a href="https://www.youtube.com/watch?v=5aguccOpGes" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
-		<li>Reading<ul>
-		<li><a href="https://seclab.stanford.edu/websec/chromium/chromium-security-architecture.pdf" target="_blank" rel="nofollow noopener noreferrer">The Security Architecture of the Chromium Browser</a></li>
-		<li><a href="https://www.chromium.org/Home/chromium-security/corb-for-developers" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin Read Blocking (CORB) primer</a></li>
-		<li>Skim: <a href="https://chromium.googlesource.com/chromium/src/+/master/services/network/cross_origin_read_blocking_explainer.md" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin Read Blocking (CORB) explainer</a></li>
-		<li><a href="https://diracdeltas.github.io/blog/backdooring-js/" target="_blank" rel="nofollow noopener noreferrer">Backdooring Your JavaScript Using Minifier Bugs</a></li>
-		<li><a href="https://medium.com/hackernoon/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5" target="_blank" rel="nofollow noopener noreferrer">I’m harvesting credit card numbers and passwords from your site. Here’s how.</a></li>
-		<li><a href="https://shkspr.mobi/blog/2018/11/major-sites-running-unauthenticated-javascript-on-their-payment-pages/" target="_blank" rel="nofollow noopener noreferrer">Major sites running unauthenticated JavaScript on their payment pages</a></li>
-		</ul></li>
-		</ul>
-		<h2>Assignments</h2>
-		<h3><a href="assign0">Assignment 0 – Web Programming Adventure ✈️</a></h3>
-		<ul>
-		<li>Assigned: Tuesday, September 24</li>
-		<li>Due: Friday, October 4 at 5:00pm</li>
-		</ul>
-		<h3><a href="assign1">Assignment 1 – Journey to the Dark Side 🌘</a></h3>
-		<ul>
-		<li>Assigned: Tuesday, October 8</li>
-		<li>Due: Friday, October 18 at 5:00pm</li>
-		</ul>
-		<h3><a href="assign2">Assignment 2 – Oh What a Tangled Web We Weave 🕸</a></h3>
-		<ul>
-		<li>Assigned: Saturday, October 26</li>
-		<li>Due: Thursday, November 7 at 11:59pm</li>
-		</ul>
-		<h3>Assignment 3 – See Piazza</h3>
-		<ul>
-		<li>Assigned: Tuesday, November 12</li>
-		<li>Due: Friday, November 22 at 5:00pm</li>
-		</ul>
-		<h3>Assignment 4 – See Piazza</h3>
-		<ul>
-		<li>Assigned: Mon, November 25</li>
-		<li>Due: Friday, December 6 at 5:00pm</li>
-		</ul>
-		<br>
-		<br>
-		<br>
-		<p>Website design by <a href="https://feross.org" target="_blank" rel="nofollow noopener noreferrer">Feross Aboukhadijeh</a>.</p>
-	</div>
+      <h2>Fall 2019</h2>
+<p>This course is a comprehensive overview of web security. The goal is to build an understanding of the most common web attacks and their countermeasures. Given the pervasive insecurity of the modern web landscape, there is a pressing need for programmers and system designers to improve their understanding of web security issues.</p>
+<p>We'll be covering the fundamentals as well as the state-of-the-art in web security.</p>
+<p>Topics include: Principles of web security, attacks and countermeasures, the browser security model, web app vulnerabilities, injection, denial-of-service, TLS attacks, privacy, fingerprinting, same-origin policy, cross site scripting, authentication, JavaScript security, emerging threats, defense-in-depth, and techniques for writing secure code. Course projects include writing security exploits, defending insecure web apps, and implementing emerging web standards.</p>
+<h2>Meeting time and place</h2>
+<p>Tuesdays and Thursdays, 1:30 PM - 2:50 PM in classroom <a href="https://campus-map.stanford.edu/?srch=380-380Y" target="_blank" rel="nofollow noopener noreferrer">380-380Y</a></p>
+<h2>Course Staff</h2>
+<h3>Instructor</h3>
+<p>Feross Aboukhadijeh (<a href="mailto:feross@cs.stanford.edu">feross@cs.stanford.edu</a>)</p>
+<h3>Teaching Assistant</h3>
+<p>Esther Goldstein (<a href="mailto:egolds@stanford.edu">egolds@stanford.edu</a>)</p>
+<h3>Office Hours</h3>
+<ul>
+<li>Feross: Thursday 3-5pm, Gates 323</li>
+<li>Esther: Monday 3-5pm, Wednesday 3-5pm, Huang Basement</li>
+</ul>
+<h2>Course Policies</h2>
+<h3>Communication</h3>
+<p>We will primarily use <a href="https://piazza.com/stanford/fall2019/cs253" target="_blank" rel="nofollow noopener noreferrer">Piazza</a> for sending out course announcements and answering questions. Please make sure to <a href="https://piazza.com/stanford/fall2019/cs253" target="_blank" rel="nofollow noopener noreferrer">sign up</a>.</p>
+<p>We use <a href="https://gradescope.com" target="_blank" rel="nofollow noopener noreferrer">Gradescope</a> for assignment submissions. Enroll with the code <code>97BGZB</code>.</p>
+<p>To submit anonymous feedback to us at any point during the quarter, you may use <a href="https://forms.gle/WqKuxA2m7oycRuTt7" target="_blank" rel="nofollow noopener noreferrer">this form</a>.</p>
+<h3>Prerequisites</h3>
+<p>CS 142, or an equivalent amount of web development experience, is a prerequisite. You should also be curious about web security and excited to learn clever attacks, defenses, and techniques for writing secure code.</p>
+<p>An introductory security course, such as CS 155, is not a formal prerequisite. The material in this course is focused specifically on the web, while CS 155 covers security more broadly.</p>
+<h3>Attendence</h3>
+<p>Attendance at lectures is mandatory. Do not enroll in this course if you are taking another course that meets at the same time.</p>
+<h3>Grading</h3>
+<ul>
+<li>Assignments (75%)</li>
+<li>Final Exam (25%)</li>
+</ul>
+<p>Each assignment is worth 15%. There is no midterm.</p>
+<h3>Final Exam</h3>
+<ul>
+<li>Tuesday, December 10, 3:30pm - 6:30pm in <a href="https://campus-map.stanford.edu/?srch=200-305" target="_blank" rel="nofollow noopener noreferrer">200-305</a></li>
+</ul>
+<h3>Previous Final Exams</h3>
+<ul>
+<li><a href="cs253-final-2019.pdf">Final Exam 2019</a> (<a href="cs253-final-2019-solutions.pdf">Solutions</a>)</li>
+<li><a href="cs253-sample-final.pdf">More Sample Final Exam Questions</a> (<a href="cs253-sample-final-solutions.pdf">Solutions</a>)</li>
+</ul>
+<h3>Collaboration Policy</h3>
+<p>You may discuss the assignments with other students and you may work together to come up with solutions to the problems. If you do so, you must list the name of your collaborators in the submission. Each student must write up their solutions independently.</p>
+<h3>Late Submissions</h3>
+<p>You get three “late days” in total during the quarter. You may use a late day to submit an assignment after the deadline. You can use at most three late days for any single assignment, and you may only use late days in one-day increments (no partial late days).</p>
+<p>If you submit an assignment more than 72 hours after the deadline, or if you submit an assignment late after running out of late days, you will receive <strong>no credit</strong> for the submission. Please submit your assignments on time and save your late days for extraordinary situations.</p>
+<p>If you have questions about these policies, please ask us.</p>
+<h2>Schedule</h2>
+<h3>Sep 24: What is Web Security? HTML &amp; JavaScript Review</h3>
+<ul>
+<li><a href="lectures/Lecture%2001.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=5JJrJGZ_LjM" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part1" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 1)</a></li>
+<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part2" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 2)</a></li>
+<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part3" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 3)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank" rel="nofollow noopener noreferrer">A Re-Introduction to JavaScript</a></li>
+</ul></li>
+</ul>
+<h3>Sep 26: HTTP, Cookies, Sessions</h3>
+<ul>
+<li><a href="lectures/Lecture%2002.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=zhnQFQ2qFtA" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" target="_blank" rel="nofollow noopener noreferrer">An overview of HTTP</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank" rel="nofollow noopener noreferrer">HTTP Cookies</a></li>
+<li>Skim: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" target="_blank" rel="nofollow noopener noreferrer">HTTP headers</a></li>
+</ul></li>
+</ul>
+<h3>Oct 01: Session Attacks</h3>
+<ul>
+<li><a href="lectures/Lecture%2003.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=QuhgjXKzfI8" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://web.dev/samesite-cookies-explained/" target="_blank" rel="nofollow noopener noreferrer">SameSite Cookies Explained</a></li>
+<li><a href="https://tools.ietf.org/html/draft-west-cookie-incrementalism-00#section-4.1" target="_blank" rel="nofollow noopener noreferrer">Incrementally Better Cookies</a></li>
+<li><a href="https://scotthelme.co.uk/csrf-is-dead/" target="_blank" rel="nofollow noopener noreferrer">CSRF Is Dead</a></li>
+</ul></li>
+</ul>
+<h3>Oct 03: Cross-Site Request Forgery, Same Origin Policy</h3>
+<ul>
+<li><a href="lectures/Lecture%2004.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=0-q69vAYSwo" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" target="_blank" rel="nofollow noopener noreferrer">Same Origin policy</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Cross-Site Request Forgery Prevention</a></li>
+</ul></li>
+</ul>
+<h3>Oct 08: Exceptions to the Same Origin Policy, Cross-Site Script Inclusion</h3>
+<ul>
+<li><a href="lectures/Lecture%2005.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=ud9cVQDte3A" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+</ul>
+<h3>Oct 10: Cross-Site Scripting (XSS)</h3>
+<ul>
+<li><a href="lectures/Lecture%2006.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=XTcqlOFhpPI" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Cross Site Scripting Prevention Cheat Sheet</a></li>
+<li><a href="https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet" target="_blank" rel="nofollow noopener noreferrer">XSS Filter Evasion Cheat Sheet</a></li>
+</ul></li>
+</ul>
+<h3>Oct 15: Cross-Site Scripting Defenses</h3>
+<ul>
+<li><a href="lectures/Lecture%2007.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=PlXzrtheQGc" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="http://research.sidstamm.com/papers/csp-www2010.pdf" target="_blank" rel="nofollow noopener noreferrer">Reining in the Web with Content Security Policy</a></li>
+<li><a href="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45542.pdf" target="_blank" rel="nofollow noopener noreferrer">CSP is Dead: Long Live CSP</a></li>
+<li><a href="https://developers.google.com/web/updates/2019/02/trusted-types" target="_blank" rel="nofollow noopener noreferrer">Trusted Types</a></li>
+<li><a href="https://fastmail.blog/2015/12/20/sanitising-html-the-dom-clobbering-issue/" target="_blank" rel="nofollow noopener noreferrer">Sanitising HTML: the DOM clobbering issue</a></li>
+</ul></li>
+</ul>
+<h3>Oct 17: Fingerprinting and Privacy on the Web</h3>
+<ul>
+<li><strong>Guest Lecture by Pete Snyder (<a href="https://brave.com" target="_blank" rel="nofollow noopener noreferrer">Brave Software</a>)</strong></li>
+<li><a href="lectures/Lecture%2008.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=OVh0oHbmla0" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://chromium.woolyss.com/f/OpenWPM-1-million-site-tracking-measurement.pdf" target="_blank" rel="nofollow noopener noreferrer">Online tracking: A 1-million-site measurement and analysis</a></li>
+<li><a href="https://arxiv.org/pdf/1708.08510" target="_blank" rel="nofollow noopener noreferrer">Most websites don't need to vibrate: A cost-benefit approach to improving browser security</a></li>
+<li><a href="https://blog.torproject.org/browser-fingerprinting-introduction-and-challenges-ahead" target="_blank" rel="nofollow noopener noreferrer">Browser Fingerprinting: An Introduction and the Challenges Ahead</a></li>
+<li><a href="https://webkit.org/blog/8943/privacy-preserving-ad-click-attribution-for-the-web/" target="_blank" rel="nofollow noopener noreferrer">WebKit Ad Click Attribution</a></li>
+<li><a href="https://crypto.stanford.edu/safecache/sameorigin.pdf" target="_blank" rel="nofollow noopener noreferrer">Protecting Browser State from Web Privacy Attacks</a></li>
+<li>Skim: <a href="https://webkit.org/tracking-prevention-policy/" target="_blank" rel="nofollow noopener noreferrer">WebKit Tracking Prevention Policy</a></li>
+</ul></li>
+</ul>
+<h3>Oct 22: Denial-of-service, Phishing, Side Channels</h3>
+<ul>
+<li><a href="lectures/Lecture%2009.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=RfC_PzVmk4w" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://www.usenix.org/system/files/conference/usenixsecurity13/sec13-paper_akhawe.pdf" target="_blank" rel="nofollow noopener noreferrer">Alice in Warningland: A Large-Scale Field Study of Browser Security</a></li>
+<li><a href="http://www.sectheory.com/clickjacking.htm" target="_blank" rel="nofollow noopener noreferrer">Clickjacking</a></li>
+<li><a href="https://www.adambarth.com/papers/2009/barth-weinberger-song.pdf" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin JavaScript Capability Leaks: Detection, Exploitation, and Defense</a></li>
+</ul></li>
+</ul>
+<h3>Oct 24: Code Injection</h3>
+<ul>
+<li><a href="lectures/Lecture%2010.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=mR7yvqWmE0M" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li>None</li>
+</ul></li>
+</ul>
+<h3>Oct 29: Transport Layer Security</h3>
+<ul>
+<li><a href="lectures/Lecture%2011.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=S8-rnPHjyxs" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://blog.cryptographyengineering.com/2019/09/24/looking-back-at-the-snowden-revelations/" target="_blank" rel="nofollow noopener noreferrer">Looking back at the Snowden revelations</a></li>
+<li><a href="https://transparencyreport.google.com/https/overview" target="_blank" rel="nofollow noopener noreferrer">HTTPS encryption on the web</a></li>
+</ul></li>
+</ul>
+<h3>Oct 31: HTTPS in the Real World: A Spooky Tale</h3>
+<ul>
+<li><strong>Guest Lecture by Emily Stark &amp; Chris Palmer (<a href="https://www.google.com/chrome/" target="_blank" rel="nofollow noopener noreferrer">Google Chrome</a>)</strong></li>
+<li><a href="lectures/Lecture%2012.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=jN26N8QS5Os" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://en.wikipedia.org/wiki/DigiNotar" target="_blank" rel="nofollow noopener noreferrer">DigiNotar on Wikipedia</a></li>
+<li><a href="https://noncombatant.org/2015/05/01/about-http-public-key-pinning/" target="_blank" rel="nofollow noopener noreferrer">About Public Key Pinning</a></li>
+<li><a href="https://noncombatant.org/2015/11/24/what-is-hpkp-for/" target="_blank" rel="nofollow noopener noreferrer">What Is HPKP For?</a></li>
+<li><a href="https://developers.google.com/web/updates/2015/09/HPKP-reporting-with-chrome-46" target="_blank" rel="nofollow noopener noreferrer">Rolling out Public Key Pinning with HPKP Reporting</a></li>
+</ul></li>
+</ul>
+<h3>Nov 05: Authentication</h3>
+<ul>
+<li><a href="lectures/Lecture%2013.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=lgmGSYwJc20" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Authentication Cheat Sheet</a></li>
+</ul></li>
+</ul>
+<h3>Nov 07: WebAuthn - The future of user authentication on the web 🤞</h3>
+<ul>
+<li><strong>Guest Lecture by Lucas Garron (<a href="https://github.com" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>)</strong></li>
+<li><a href="lectures/Lecture%2014.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=_nPk2HgNpjE" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://webauthn.guide/" target="_blank" rel="nofollow noopener noreferrer">Guide to Web Authentication</a></li>
+</ul></li>
+</ul>
+<h3>Nov 12: No class</h3>
+<h3>Nov 14: Managing security concerns in a large Open Source project</h3>
+<ul>
+<li><strong>Guest Lecture by Myles Borins (<a href="https://nodejs.org/en/" target="_blank" rel="nofollow noopener noreferrer">Node.js</a> technical steering committee, <a href="https://www.google.com/" target="_blank" rel="nofollow noopener noreferrer">Google</a>)</strong></li>
+<li><a href="https://kni.sh/oss-security" target="_blank" rel="nofollow noopener noreferrer">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=lX6KLL0sVTU" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://gruss.cc/files/fantastictimers.pdf" target="_blank" rel="nofollow noopener noreferrer">Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript</a></li>
+<li><a href="https://nodesecroadmap.fyi" target="_blank" rel="nofollow noopener noreferrer">A Roadmap for Node.js Security</a></li>
+</ul></li>
+</ul>
+<h3>Nov 19: Server security, Safe coding practices</h3>
+<ul>
+<li><a href="lectures/Lecture%2017.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ox15IMOvWfA" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://snyk.io/blog/exploiting-buffer/" target="_blank" rel="nofollow noopener noreferrer">Exploiting Buffer</a></li>
+</ul></li>
+</ul>
+<h3>Nov 21: Local HTTP server security</h3>
+<ul>
+<li><a href="lectures/Lecture%2018.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=wLgcb4jZwGM" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li>None</li>
+</ul></li>
+</ul>
+<h3>Dec 03: DNS rebinding attacks</h3>
+<ul>
+<li><a href="lectures/Lecture%2019.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=bZW_55LIz0w" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://www.wired.com/story/chromecast-roku-sonos-dns-rebinding-vulnerability/" target="_blank" rel="nofollow noopener noreferrer">Millions of Streaming Devices Are Vulnerable to a Retro Web Attack</a></li>
+<li><a href="https://crypto.stanford.edu/dns/dns-rebinding.pdf" target="_blank" rel="nofollow noopener noreferrer">Protecting Browsers from DNS Rebinding Attacks</a></li>
+</ul></li>
+</ul>
+<h3>Dec 05: Browser architecture, Writing secure code</h3>
+<ul>
+<li><a href="lectures/Lecture%2020.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=5aguccOpGes" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://seclab.stanford.edu/websec/chromium/chromium-security-architecture.pdf" target="_blank" rel="nofollow noopener noreferrer">The Security Architecture of the Chromium Browser</a></li>
+<li><a href="https://www.chromium.org/Home/chromium-security/corb-for-developers" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin Read Blocking (CORB) primer</a></li>
+<li>Skim: <a href="https://chromium.googlesource.com/chromium/src/+/master/services/network/cross_origin_read_blocking_explainer.md" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin Read Blocking (CORB) explainer</a></li>
+<li><a href="https://diracdeltas.github.io/blog/backdooring-js/" target="_blank" rel="nofollow noopener noreferrer">Backdooring Your JavaScript Using Minifier Bugs</a></li>
+<li><a href="https://medium.com/hackernoon/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5" target="_blank" rel="nofollow noopener noreferrer">I’m harvesting credit card numbers and passwords from your site. Here’s how.</a></li>
+<li><a href="https://shkspr.mobi/blog/2018/11/major-sites-running-unauthenticated-javascript-on-their-payment-pages/" target="_blank" rel="nofollow noopener noreferrer">Major sites running unauthenticated JavaScript on their payment pages</a></li>
+</ul></li>
+</ul>
+<h2>Assignments</h2>
+<h3><a href="assign0">Assignment 0 – Web Programming Adventure ✈️</a></h3>
+<ul>
+<li>Assigned: Tuesday, September 24</li>
+<li>Due: Friday, October 4 at 5:00pm</li>
+</ul>
+<h3><a href="assign1">Assignment 1 – Journey to the Dark Side 🌘</a></h3>
+<ul>
+<li>Assigned: Tuesday, October 8</li>
+<li>Due: Friday, October 18 at 5:00pm</li>
+</ul>
+<h3><a href="assign2">Assignment 2 – Oh What a Tangled Web We Weave 🕸</a></h3>
+<ul>
+<li>Assigned: Saturday, October 26</li>
+<li>Due: Thursday, November 7 at 11:59pm</li>
+</ul>
+<h3>Assignment 3 – See Piazza</h3>
+<ul>
+<li>Assigned: Tuesday, November 12</li>
+<li>Due: Friday, November 22 at 5:00pm</li>
+</ul>
+<h3>Assignment 4 – See Piazza</h3>
+<ul>
+<li>Assigned: Mon, November 25</li>
+<li>Due: Friday, December 6 at 5:00pm</li>
+</ul>
+<br>
+<br>
+<br>
+<p>Website design by <a href="https://feross.org" target="_blank" rel="nofollow noopener noreferrer">Feross Aboukhadijeh</a>.</p>
+<body>
+
+    <div class="content">
+      <a href="https://cs253.stanford.edu" class="logo">
+        <img src="stanford.svg" alt="Stanford">
+        <h1>CS 253 Web Security</h1>
+      </a>
+
+      <h2>Fall 2019</h2>
+<p>This course is a comprehensive overview of web security. The goal is to build an understanding of the most common web attacks and their countermeasures. Given the pervasive insecurity of the modern web landscape, there is a pressing need for programmers and system designers to improve their understanding of web security issues.</p>
+<p>We'll be covering the fundamentals as well as the state-of-the-art in web security.</p>
+<p>Topics include: Principles of web security, attacks and countermeasures, the browser security model, web app vulnerabilities, injection, denial-of-service, TLS attacks, privacy, fingerprinting, same-origin policy, cross site scripting, authentication, JavaScript security, emerging threats, defense-in-depth, and techniques for writing secure code. Course projects include writing security exploits, defending insecure web apps, and implementing emerging web standards.</p>
+<h2>Meeting time and place</h2>
+<p>Tuesdays and Thursdays, 1:30 PM - 2:50 PM in classroom <a href="https://campus-map.stanford.edu/?srch=380-380Y" target="_blank" rel="nofollow noopener noreferrer">380-380Y</a></p>
+<h2>Course Staff</h2>
+<h3>Instructor</h3>
+<p>Feross Aboukhadijeh (<a href="mailto:feross@cs.stanford.edu">feross@cs.stanford.edu</a>)</p>
+<h3>Teaching Assistant</h3>
+<p>Esther Goldstein (<a href="mailto:egolds@stanford.edu">egolds@stanford.edu</a>)</p>
+<h3>Office Hours</h3>
+<ul>
+<li>Feross: Thursday 3-5pm, Gates 323</li>
+<li>Esther: Monday 3-5pm, Wednesday 3-5pm, Huang Basement</li>
+</ul>
+<h2>Course Policies</h2>
+<h3>Communication</h3>
+<p>We will primarily use <a href="https://piazza.com/stanford/fall2019/cs253" target="_blank" rel="nofollow noopener noreferrer">Piazza</a> for sending out course announcements and answering questions. Please make sure to <a href="https://piazza.com/stanford/fall2019/cs253" target="_blank" rel="nofollow noopener noreferrer">sign up</a>.</p>
+<p>We use <a href="https://gradescope.com" target="_blank" rel="nofollow noopener noreferrer">Gradescope</a> for assignment submissions. Enroll with the code <code>97BGZB</code>.</p>
+<p>To submit anonymous feedback to us at any point during the quarter, you may use <a href="https://forms.gle/WqKuxA2m7oycRuTt7" target="_blank" rel="nofollow noopener noreferrer">this form</a>.</p>
+<h3>Prerequisites</h3>
+<p>CS 142, or an equivalent amount of web development experience, is a prerequisite. You should also be curious about web security and excited to learn clever attacks, defenses, and techniques for writing secure code.</p>
+<p>An introductory security course, such as CS 155, is not a formal prerequisite. The material in this course is focused specifically on the web, while CS 155 covers security more broadly.</p>
+<h3>Attendence</h3>
+<p>Attendance at lectures is mandatory. Do not enroll in this course if you are taking another course that meets at the same time.</p>
+<h3>Grading</h3>
+<ul>
+<li>Assignments (75%)</li>
+<li>Final Exam (25%)</li>
+</ul>
+<p>Each assignment is worth 15%. There is no midterm.</p>
+<h3>Final Exam</h3>
+<ul>
+<li>Tuesday, December 10, 3:30pm - 6:30pm in <a href="https://campus-map.stanford.edu/?srch=200-305" target="_blank" rel="nofollow noopener noreferrer">200-305</a></li>
+</ul>
+<h3>Previous Final Exams</h3>
+<ul>
+<li><a href="cs253-final-2019.pdf">Final Exam 2019</a> (<a href="cs253-final-2019-solutions.pdf">Solutions</a>)</li>
+<li><a href="cs253-sample-final.pdf">More Sample Final Exam Questions</a> (<a href="cs253-sample-final-solutions.pdf">Solutions</a>)</li>
+</ul>
+<h3>Collaboration Policy</h3>
+<p>You may discuss the assignments with other students and you may work together to come up with solutions to the problems. If you do so, you must list the name of your collaborators in the submission. Each student must write up their solutions independently.</p>
+<h3>Late Submissions</h3>
+<p>You get three “late days” in total during the quarter. You may use a late day to submit an assignment after the deadline. You can use at most three late days for any single assignment, and you may only use late days in one-day increments (no partial late days).</p>
+<p>If you submit an assignment more than 72 hours after the deadline, or if you submit an assignment late after running out of late days, you will receive <strong>no credit</strong> for the submission. Please submit your assignments on time and save your late days for extraordinary situations.</p>
+<p>If you have questions about these policies, please ask us.</p>
+<h2>Schedule</h2>
+<h3>Sep 24: What is Web Security? HTML &amp; JavaScript Review</h3>
+<ul>
+<li><a href="lectures/Lecture%2001.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=5JJrJGZ_LjM" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part1" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 1)</a></li>
+<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part2" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 2)</a></li>
+<li><a href="https://developers.google.com/web/updates/2018/09/inside-browser-part3" target="_blank" rel="nofollow noopener noreferrer">Inside look at modern web browser (part 3)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank" rel="nofollow noopener noreferrer">A Re-Introduction to JavaScript</a></li>
+</ul></li>
+</ul>
+<h3>Sep 26: HTTP, Cookies, Sessions</h3>
+<ul>
+<li><a href="lectures/Lecture%2002.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=zhnQFQ2qFtA" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" target="_blank" rel="nofollow noopener noreferrer">An overview of HTTP</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank" rel="nofollow noopener noreferrer">HTTP Cookies</a></li>
+<li>Skim: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" target="_blank" rel="nofollow noopener noreferrer">HTTP headers</a></li>
+</ul></li>
+</ul>
+<h3>Oct 01: Session Attacks</h3>
+<ul>
+<li><a href="lectures/Lecture%2003.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=QuhgjXKzfI8" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://web.dev/samesite-cookies-explained/" target="_blank" rel="nofollow noopener noreferrer">SameSite Cookies Explained</a></li>
+<li><a href="https://tools.ietf.org/html/draft-west-cookie-incrementalism-00#section-4.1" target="_blank" rel="nofollow noopener noreferrer">Incrementally Better Cookies</a></li>
+<li><a href="https://scotthelme.co.uk/csrf-is-dead/" target="_blank" rel="nofollow noopener noreferrer">CSRF Is Dead</a></li>
+</ul></li>
+</ul>
+<h3>Oct 03: Cross-Site Request Forgery, Same Origin Policy</h3>
+<ul>
+<li><a href="lectures/Lecture%2004.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=0-q69vAYSwo" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" target="_blank" rel="nofollow noopener noreferrer">Same Origin policy</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Cross-Site Request Forgery Prevention</a></li>
+</ul></li>
+</ul>
+<h3>Oct 08: Exceptions to the Same Origin Policy, Cross-Site Script Inclusion</h3>
+<ul>
+<li><a href="lectures/Lecture%2005.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=ud9cVQDte3A" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+</ul>
+<h3>Oct 10: Cross-Site Scripting (XSS)</h3>
+<ul>
+<li><a href="lectures/Lecture%2006.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=XTcqlOFhpPI" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Cross Site Scripting Prevention Cheat Sheet</a></li>
+<li><a href="https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet" target="_blank" rel="nofollow noopener noreferrer">XSS Filter Evasion Cheat Sheet</a></li>
+</ul></li>
+</ul>
+<h3>Oct 15: Cross-Site Scripting Defenses</h3>
+<ul>
+<li><a href="lectures/Lecture%2007.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=PlXzrtheQGc" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="http://research.sidstamm.com/papers/csp-www2010.pdf" target="_blank" rel="nofollow noopener noreferrer">Reining in the Web with Content Security Policy</a></li>
+<li><a href="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45542.pdf" target="_blank" rel="nofollow noopener noreferrer">CSP is Dead: Long Live CSP</a></li>
+<li><a href="https://developers.google.com/web/updates/2019/02/trusted-types" target="_blank" rel="nofollow noopener noreferrer">Trusted Types</a></li>
+<li><a href="https://fastmail.blog/2015/12/20/sanitising-html-the-dom-clobbering-issue/" target="_blank" rel="nofollow noopener noreferrer">Sanitising HTML: the DOM clobbering issue</a></li>
+</ul></li>
+</ul>
+<h3>Oct 17: Fingerprinting and Privacy on the Web</h3>
+<ul>
+<li><strong>Guest Lecture by Pete Snyder (<a href="https://brave.com" target="_blank" rel="nofollow noopener noreferrer">Brave Software</a>)</strong></li>
+<li><a href="lectures/Lecture%2008.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=OVh0oHbmla0" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://chromium.woolyss.com/f/OpenWPM-1-million-site-tracking-measurement.pdf" target="_blank" rel="nofollow noopener noreferrer">Online tracking: A 1-million-site measurement and analysis</a></li>
+<li><a href="https://arxiv.org/pdf/1708.08510" target="_blank" rel="nofollow noopener noreferrer">Most websites don't need to vibrate: A cost-benefit approach to improving browser security</a></li>
+<li><a href="https://blog.torproject.org/browser-fingerprinting-introduction-and-challenges-ahead" target="_blank" rel="nofollow noopener noreferrer">Browser Fingerprinting: An Introduction and the Challenges Ahead</a></li>
+<li><a href="https://webkit.org/blog/8943/privacy-preserving-ad-click-attribution-for-the-web/" target="_blank" rel="nofollow noopener noreferrer">WebKit Ad Click Attribution</a></li>
+<li><a href="https://crypto.stanford.edu/safecache/sameorigin.pdf" target="_blank" rel="nofollow noopener noreferrer">Protecting Browser State from Web Privacy Attacks</a></li>
+<li>Skim: <a href="https://webkit.org/tracking-prevention-policy/" target="_blank" rel="nofollow noopener noreferrer">WebKit Tracking Prevention Policy</a></li>
+</ul></li>
+</ul>
+<h3>Oct 22: Denial-of-service, Phishing, Side Channels</h3>
+<ul>
+<li><a href="lectures/Lecture%2009.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=RfC_PzVmk4w" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://www.usenix.org/system/files/conference/usenixsecurity13/sec13-paper_akhawe.pdf" target="_blank" rel="nofollow noopener noreferrer">Alice in Warningland: A Large-Scale Field Study of Browser Security</a></li>
+<li><a href="http://www.sectheory.com/clickjacking.htm" target="_blank" rel="nofollow noopener noreferrer">Clickjacking</a></li>
+<li><a href="https://www.adambarth.com/papers/2009/barth-weinberger-song.pdf" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin JavaScript Capability Leaks: Detection, Exploitation, and Defense</a></li>
+</ul></li>
+</ul>
+<h3>Oct 24: Code Injection</h3>
+<ul>
+<li><a href="lectures/Lecture%2010.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=mR7yvqWmE0M" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li>None</li>
+</ul></li>
+</ul>
+<h3>Oct 29: Transport Layer Security</h3>
+<ul>
+<li><a href="lectures/Lecture%2011.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=S8-rnPHjyxs" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://blog.cryptographyengineering.com/2019/09/24/looking-back-at-the-snowden-revelations/" target="_blank" rel="nofollow noopener noreferrer">Looking back at the Snowden revelations</a></li>
+<li><a href="https://transparencyreport.google.com/https/overview" target="_blank" rel="nofollow noopener noreferrer">HTTPS encryption on the web</a></li>
+</ul></li>
+</ul>
+<h3>Oct 31: HTTPS in the Real World: A Spooky Tale</h3>
+<ul>
+<li><strong>Guest Lecture by Emily Stark &amp; Chris Palmer (<a href="https://www.google.com/chrome/" target="_blank" rel="nofollow noopener noreferrer">Google Chrome</a>)</strong></li>
+<li><a href="lectures/Lecture%2012.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=jN26N8QS5Os" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://en.wikipedia.org/wiki/DigiNotar" target="_blank" rel="nofollow noopener noreferrer">DigiNotar on Wikipedia</a></li>
+<li><a href="https://noncombatant.org/2015/05/01/about-http-public-key-pinning/" target="_blank" rel="nofollow noopener noreferrer">About Public Key Pinning</a></li>
+<li><a href="https://noncombatant.org/2015/11/24/what-is-hpkp-for/" target="_blank" rel="nofollow noopener noreferrer">What Is HPKP For?</a></li>
+<li><a href="https://developers.google.com/web/updates/2015/09/HPKP-reporting-with-chrome-46" target="_blank" rel="nofollow noopener noreferrer">Rolling out Public Key Pinning with HPKP Reporting</a></li>
+</ul></li>
+</ul>
+<h3>Nov 05: Authentication</h3>
+<ul>
+<li><a href="lectures/Lecture%2013.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=lgmGSYwJc20" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">Authentication Cheat Sheet</a></li>
+</ul></li>
+</ul>
+<h3>Nov 07: WebAuthn - The future of user authentication on the web 🤞</h3>
+<ul>
+<li><strong>Guest Lecture by Lucas Garron (<a href="https://github.com" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>)</strong></li>
+<li><a href="lectures/Lecture%2014.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=_nPk2HgNpjE" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://webauthn.guide/" target="_blank" rel="nofollow noopener noreferrer">Guide to Web Authentication</a></li>
+</ul></li>
+</ul>
+<h3>Nov 12: No class</h3>
+<h3>Nov 14: Managing security concerns in a large Open Source project</h3>
+<ul>
+<li><strong>Guest Lecture by Myles Borins (<a href="https://nodejs.org/en/" target="_blank" rel="nofollow noopener noreferrer">Node.js</a> technical steering committee, <a href="https://www.google.com/" target="_blank" rel="nofollow noopener noreferrer">Google</a>)</strong></li>
+<li><a href="https://kni.sh/oss-security" target="_blank" rel="nofollow noopener noreferrer">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=lX6KLL0sVTU" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://gruss.cc/files/fantastictimers.pdf" target="_blank" rel="nofollow noopener noreferrer">Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript</a></li>
+<li><a href="https://nodesecroadmap.fyi" target="_blank" rel="nofollow noopener noreferrer">A Roadmap for Node.js Security</a></li>
+</ul></li>
+</ul>
+<h3>Nov 19: Server security, Safe coding practices</h3>
+<ul>
+<li><a href="lectures/Lecture%2017.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ox15IMOvWfA" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://snyk.io/blog/exploiting-buffer/" target="_blank" rel="nofollow noopener noreferrer">Exploiting Buffer</a></li>
+</ul></li>
+</ul>
+<h3>Nov 21: Local HTTP server security</h3>
+<ul>
+<li><a href="lectures/Lecture%2018.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=wLgcb4jZwGM" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li>None</li>
+</ul></li>
+</ul>
+<h3>Dec 03: DNS rebinding attacks</h3>
+<ul>
+<li><a href="lectures/Lecture%2019.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=bZW_55LIz0w" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://www.wired.com/story/chromecast-roku-sonos-dns-rebinding-vulnerability/" target="_blank" rel="nofollow noopener noreferrer">Millions of Streaming Devices Are Vulnerable to a Retro Web Attack</a></li>
+<li><a href="https://crypto.stanford.edu/dns/dns-rebinding.pdf" target="_blank" rel="nofollow noopener noreferrer">Protecting Browsers from DNS Rebinding Attacks</a></li>
+</ul></li>
+</ul>
+<h3>Dec 05: Browser architecture, Writing secure code</h3>
+<ul>
+<li><a href="lectures/Lecture%2020.pdf">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=5aguccOpGes" target="_blank" rel="nofollow noopener noreferrer">Video</a></li>
+<li>Reading<ul>
+<li><a href="https://seclab.stanford.edu/websec/chromium/chromium-security-architecture.pdf" target="_blank" rel="nofollow noopener noreferrer">The Security Architecture of the Chromium Browser</a></li>
+<li><a href="https://www.chromium.org/Home/chromium-security/corb-for-developers" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin Read Blocking (CORB) primer</a></li>
+<li>Skim: <a href="https://chromium.googlesource.com/chromium/src/+/master/services/network/cross_origin_read_blocking_explainer.md" target="_blank" rel="nofollow noopener noreferrer">Cross-Origin Read Blocking (CORB) explainer</a></li>
+<li><a href="https://diracdeltas.github.io/blog/backdooring-js/" target="_blank" rel="nofollow noopener noreferrer">Backdooring Your JavaScript Using Minifier Bugs</a></li>
+<li><a href="https://medium.com/hackernoon/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5" target="_blank" rel="nofollow noopener noreferrer">I’m harvesting credit card numbers and passwords from your site. Here’s how.</a></li>
+<li><a href="https://shkspr.mobi/blog/2018/11/major-sites-running-unauthenticated-javascript-on-their-payment-pages/" target="_blank" rel="nofollow noopener noreferrer">Major sites running unauthenticated JavaScript on their payment pages</a></li>
+</ul></li>
+</ul>
+<h2>Assignments</h2>
+<h3><a href="assign0">Assignment 0 – Web Programming Adventure ✈️</a></h3>
+<ul>
+<li>Assigned: Tuesday, September 24</li>
+<li>Due: Friday, October 4 at 5:00pm</li>
+</ul>
+<h3><a href="assign1">Assignment 1 – Journey to the Dark Side 🌘</a></h3>
+<ul>
+<li>Assigned: Tuesday, October 8</li>
+<li>Due: Friday, October 18 at 5:00pm</li>
+</ul>
+<h3><a href="assign2">Assignment 2 – Oh What a Tangled Web We Weave 🕸</a></h3>
+<ul>
+<li>Assigned: Saturday, October 26</li>
+<li>Due: Thursday, November 7 at 11:59pm</li>
+</ul>
+<h3>Assignment 3 – See Piazza</h3>
+<ul>
+<li>Assigned: Tuesday, November 12</li>
+<li>Due: Friday, November 22 at 5:00pm</li>
+</ul>
+<h3>Assignment 4 – See Piazza</h3>
+<ul>
+<li>Assigned: Mon, November 25</li>
+<li>Due: Friday, December 6 at 5:00pm</li>
+</ul>
+<br>
+<br>
+<br>
+<p>Website design by <a href="https://feross.org" target="_blank" rel="nofollow noopener noreferrer">Feross Aboukhadijeh</a>.</p>
+    </div>
 </body>
 </html>
